@@ -4,7 +4,9 @@
 
 # System Entwurf
 
-![UML Diagram][https://i.imgur.com/OAJwEbk.png]
+![[Design_Versicherungsrechner.png]]
+
+---
 
 # Problem Statement
 ## Kunden / Nutzer
@@ -30,7 +32,7 @@
 - App development zu anschpruchsvoll
 - Zu viele verschiedene Versicherungstypen
 	- Unrealistisch alles zu implementieren
-
+---
 # Userstory
 ## Fall 1
 >Person braucht eine Haftpflichtversicherung für sein neu gekauftes Auto.
@@ -69,9 +71,10 @@
 	3. Gesamtpreis der Zusatz der Prämie relativ zu momentanem Preis bis er wieder auf seiner momentanen BMS-Stufe ist
 	4. Ob er den Schaden der Versicherung melden soll
 
+---
 
 # Key Screen
 Main Menu
-![Main Menu][https://i.imgur.com/j1hYtOG.png]
+![[Screen-Main.png]]
 
 
