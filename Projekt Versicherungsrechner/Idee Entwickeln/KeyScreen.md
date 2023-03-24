@@ -8,5 +8,5 @@ Colors
 </table>
 ## Main Menu
 
-![[Screen-Main.png]]
+![KeyScreen][https://i.imgur.com/j1hYtOG.png]
 

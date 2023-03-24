@@ -15,15 +15,9 @@
 - Website schneller machen
 - Datenbank verwenden um Versicherungspreise speichern
 
-## Metriken
-- 
-
 ## Stakeholder
 - App entwickler
 - Versicherungen (Sponsoring?)
-
-## Randbedingungen
-- 
 
 ## Risiken
 - App development zu anschpruchsvoll
