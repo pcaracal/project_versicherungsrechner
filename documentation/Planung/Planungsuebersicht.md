@@ -8,8 +8,8 @@
 ---
 
 ## Anstehende Ideen
-- [ ] Idee 1
-- [ ] Idee 2
+- [ ] Website main page realisieren gemäss Skizze von Figma
+- [ ] 
 
 ---
 
@@ -22,10 +22,17 @@
 - [ ] 
 
 ### Erledigt
+- [ ] React App Erstellen
+- [ ] CSS Library importieren
 - [ ] 
 
 ---
 
 ## Abgeschlossene Arbeiten
+
+24.03.2023:
 - [ ] Dokumentation erstellen
 - [ ] 
+
+
+
