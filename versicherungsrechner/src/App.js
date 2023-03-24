@@ -1,8 +1,11 @@
+import Home from "./sites/Home";
+import Navbar from "./components/Navbar";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <h1>Versicherungsrechner</h1>
+      <Navbar />
+      <Home />
     </div>
   );
 }
