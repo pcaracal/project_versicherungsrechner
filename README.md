@@ -2,5 +2,5 @@
 Git-Repo zum Projekt
 
 ## How to use
-./documentation/ - Markdown Dokumentation für Projekt
+`./documentation/` - Markdown Dokumentation für Projekt
 
