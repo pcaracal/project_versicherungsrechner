@@ -15,13 +15,13 @@
 
 ## Momentane Arbeiten
 
-### offen
+### Offen
 - [ ] 
 
-### in Arbeit
+### Arbeit
 - [ ] 
 
-### erledigt
+### Erledigt
 - [ ] 
 
 ---
