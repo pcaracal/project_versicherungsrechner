@@ -9,7 +9,8 @@
 
 ## Anstehende Ideen
 - [ ] Website main page realisieren gemäss Skizze von Figma
-- [ ] 
+- [ ] Homepage erstellen
+- [ ] React router für multi-page
 
 ---
 
@@ -18,18 +19,15 @@
 ### Offen
 - [ ] 
 
-### Arbeit
-- [ ] 
-
-### Erledigt
-- [ ] React App Erstellen
-- [ ] CSS Library importieren
+### In Arbeit
 - [ ] 
 
 ---
 
 ## Abgeschlossene Arbeiten
 24.03.2023
+- [ ] React App Erstellen
+- [ ] CSS Library importieren
 - [ ] 
 
 17.03.2023:
