@@ -6,6 +6,11 @@
 | Git-Repo | [Repo](https://github.com/bambuk-sh/project_versicherungsrechner) |
 
 ---
+## Hauptziel:
+- Rechner
+	- Schadensrechner in Hausrat
+	- Bonus-Malus-System bei Haftpflichtversicherung
+
 
 ## Anstehende Ideen
 - [ ] 
