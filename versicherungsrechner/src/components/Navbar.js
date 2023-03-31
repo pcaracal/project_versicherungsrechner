@@ -1,14 +1,15 @@
 
-import { Link } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
+    const navigate = useNavigate();
     return (
         <div className="Navbar">
             <nav className="container-fluid navoverride">
-                <h1 className="nomargin">Versicherungsrechner</h1>
+                <h1 className="nomargin" onClick={() => navigate("/")}>Versicherungsrechner</h1>
                 <ul>
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/about">About</Link></li>
+                    <li><NavLink to="/">Home</NavLink></li>
+                    <li><NavLink to="/about">About</NavLink></li>
                 </ul>
             </nav>
         </div>

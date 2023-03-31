@@ -1,11 +1,15 @@
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
+    const navigate = useNavigate();
+
     return (
         <div className="Home">
             <main className="container">
                 <header><h1>Home</h1></header>
 
-                <aside>
+
+                <aside onClick={() => navigate("auto")}>
                     <article>
                         <header>
                             <strong>
@@ -16,7 +20,8 @@ const Home = () => {
                     </article>
                 </aside>
 
-                <aside>
+
+                <aside onClick={() => navigate("hausrat")}>
                     <article>
                         <header>
                             <strong>
@@ -26,6 +31,7 @@ const Home = () => {
                         Ein Schadensrechner für Hausratsversicherungen
                     </article>
                 </aside>
+
             </main>
         </div>
     );
