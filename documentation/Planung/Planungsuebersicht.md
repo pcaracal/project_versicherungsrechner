@@ -20,19 +20,29 @@
 ## Momentane Arbeiten
 
 ### Offen
-- React router für multi-page
+- Autoversicherung Rechner Site
+	- B-M-S Rechner
+	- Versicherungstypen
 
 ### In Arbeit
-- Website main page realisieren gemäss Skizze von Figma
-- Homepage erstellen
+- Hausratsversicherung Site
+	- Schadensrechner
 
 ---
 
 ## Abgeschlossene Arbeiten
+
+31.03.2023
+- Website main page realisieren gemäss Skizze von Figma
+- Homepage erstellen
+- React router für multi-page
+
+
 24.03.2023
 - React App Erstellen
 - CSS Library importieren
 - Ordnerstruktur für React Components und Sites
+
 
 17.03.2023:
 - Dokumentation erstellen
