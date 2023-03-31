@@ -5,3 +5,10 @@
 .nomargin {
     margin: 0;
 }
+
+.navoverride {
+    border-bottom: 2px solid rgba(115, 130, 140, 0.2);
+    background-color: rgba(16, 24, 30, 0.8);
+    padding-right: 1rem;
+    padding-left: 1rem;
+}

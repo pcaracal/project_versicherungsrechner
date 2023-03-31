@@ -13,29 +13,29 @@
 
 
 ## Anstehende Ideen
-- [ ] 
+- 
 
 ---
 
 ## Momentane Arbeiten
 
 ### Offen
-- [ ] React router für multi-page
+- React router für multi-page
 
 ### In Arbeit
-- [ ] Website main page realisieren gemäss Skizze von Figma
-- [ ] Homepage erstellen
+- Website main page realisieren gemäss Skizze von Figma
+- Homepage erstellen
 
 ---
 
 ## Abgeschlossene Arbeiten
 24.03.2023
-- [ ] React App Erstellen
-- [ ] CSS Library importieren
-- [ ] Ordnerstruktur für React Components und Sites
+- React App Erstellen
+- CSS Library importieren
+- Ordnerstruktur für React Components und Sites
 
 17.03.2023:
-- [ ] Dokumentation erstellen
+- Dokumentation erstellen
 
 
 
