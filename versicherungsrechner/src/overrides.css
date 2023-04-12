@@ -12,3 +12,7 @@
     padding-right: 1rem;
     padding-left: 1rem;
 }
+
+.tooltip {
+    width: 100px;
+}

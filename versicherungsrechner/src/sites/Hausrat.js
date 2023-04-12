@@ -6,7 +6,21 @@ const Hausrat = () => {
     const [vs, setVS] = useState(0);
     const [dmg, setDmg] = useState(0);
     const [payment, setPayment] = useState(0);
-    const [vstype, setVstype] = useState("Optimal");
+    const vstypes = [
+        [
+            "Optimal",
+            "Ihr Hausratswert entspricht der Versicherungssumme. Sie Zahlen nicht zu viel und werden immer eine vollständige Schadensauszahlung erhalten."
+        ],
+        [
+            "Überversichert",
+            "Ihre Versicherungssumme ist höher als der Hausratswert. Sie werden immer eine vollständige Schadensauszahlung erhalten, jedoch zahlen Sie zu viel für ihre Versicherung."
+        ],
+        [
+            "Unterversichert",
+            "Ihre Versicherungssumme ist tiefer als der Hausratswert. Sie zahlen eine kleinere Prämie, aber werden immer Schadensauszahlung kleiner als der Schaden erhalten."
+        ]
+    ]
+    const [vsN, setVsN] = useState(0);
     const [vwInvalid, setVwInvalid] = useState("")
     const [vsInvalid, setVsInvalid] = useState("")
     const [dmgInvalid, setDmgInvalid] = useState("");
@@ -24,7 +38,7 @@ const Hausrat = () => {
     }
 
     const checkVsStatus = () => {
-        setVstype(vs === vw ? "Optimal" : (vs > vw ? "Überversichert" : "Unterversichert"));
+        setVsN(vs === vw ? 0 : (vs > vw ? 1 : 2));
     }
 
     const checkInputValidity = () => {
@@ -54,11 +68,13 @@ const Hausrat = () => {
                     <InputElement isInvalid={dmgInvalid} setVal={setDmg} onlyNumbers={true} placeholder={"Schaden"} />
 
                     <footer>
-                        <strong>
-                            Schadenauszahlung: {payment} <br />
-                            Versicherungsstatus: {vstype} <br />
-                        </strong>
+                        <div hidden={dmgInvalid}>
+                            <strong>Schadenauszahlung: {payment}</strong><br />
+                            <strong>Versicherungsstatus: {vstypes[vsN][0]}</strong><br />
+                            <p>{vstypes[vsN][1]}</p>
+                        </div>
                     </footer>
+
                 </article>
             </main>
         </div>
