@@ -6,33 +6,35 @@ const Hausrat = () => {
     const [vs, setVS] = useState(0);
     const [dmg, setDmg] = useState(0);
     const [payment, setPayment] = useState(0);
-    const [VsStatus, setVsStatus] = useState(1);
-    const vstypes = ["Überversichert", "Optimal", "Unterversichert"];
-    const [vstype, setVstype] = useState(vstypes[1]);
+    const [vstype, setVstype] = useState("Optimal");
+    const [vwInvalid, setVwInvalid] = useState("")
+    const [vsInvalid, setVsInvalid] = useState("")
+    const [dmgInvalid, setDmgInvalid] = useState("");
 
     const checkVsStatus = () => {
-        const tmp = vs / vw;
-
-        switch (tmp) {
-            default:
-            case tmp > 1: {
-                setVsStatus(0);
-                break;
+        if (dmg <= vw) {
+            if (vs <= vw) {
+                setPayment((vs / vw) * dmg);
+            } else if ((vs > vw) && dmg) {
+                setPayment(dmg);
             }
-            case tmp === 1: {
-                setVsStatus(1);
-                break;
-            }
-            case tmp < 1: {
-                setVsStatus(2);
-                break;
-            }
+        } else {
+            setPayment(0);
         }
+    }
+
+    const checkInputValidity = () => {
+        if (vw === 0 || vs === 0 || dmg === 0) { setDmgInvalid("") }
+        else { setDmgInvalid(dmg > vw) }
+
+        setVwInvalid(vw === 0 ? "" : (vw < 1));
+        setVsInvalid(vs === 0 ? "" : (vs < 1));
     }
 
     useEffect(() => {
         checkVsStatus();
-    }, [vw, vs, dmg]);
+        checkInputValidity();
+    }, [vw, vs, dmg])
 
     return (
         <div className="Hausrat">
@@ -42,15 +44,14 @@ const Hausrat = () => {
                 <article>
                     <header><strong>Schadensrechner für Hausratsversicherung</strong></header>
 
-                    <InputElement setVal={setVW} onlyNumbers={true} placeholder={"Versicherungswert"} />
-                    <InputElement setVal={setVS} onlyNumbers={true} placeholder={"Versicherungssumme"} />
-                    <InputElement setVal={setDmg} onlyNumbers={true} placeholder={"Schaden"} />
+                    <InputElement isInvalid={vwInvalid} setVal={setVW} onlyNumbers={true} placeholder={"Hausratswert"} />
+                    <InputElement isInvalid={vsInvalid} setVal={setVS} onlyNumbers={true} placeholder={"Versicherungssumme"} />
+                    <InputElement isInvalid={dmgInvalid} setVal={setDmg} onlyNumbers={true} placeholder={"Schaden"} />
 
                     <footer>
                         <strong>
-                            {/* Schadenauszahlung: {payment === Infinity ? 0 : (payment ? payment : 0)} */}
                             Schadenauszahlung: {payment} <br />
-                            Versicherungsstatus: {vstype}
+                            Versicherungsstatus: {vstype} <br />
                         </strong>
                     </footer>
                 </article>

@@ -6,7 +6,9 @@ const InputElement = (props) => { //Props: func: setVal() | str/int: val | str: 
     const numPattern = "[0-9]*";
 
     useEffect(() => {
-        props.setVal(val)
+        if (props.onlyNumbers) props.setVal(Number(val))
+        else props.setVal(val);
+
     }, [val]);
 
 
@@ -17,9 +19,9 @@ const InputElement = (props) => { //Props: func: setVal() | str/int: val | str: 
                 pattern={props.onlyNumbers ? numPattern : "*"}
                 onChange={(e) => {
                     setVal(() => (e.target.validity.patternMismatch ? val : e.target.value));
-
                 }}
                 value={val}
+                aria-invalid={props.isInvalid}
             />
         </div>
     );
