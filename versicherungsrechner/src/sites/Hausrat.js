@@ -11,8 +11,8 @@ const Hausrat = () => {
     const [vsInvalid, setVsInvalid] = useState("")
     const [dmgInvalid, setDmgInvalid] = useState("");
 
-    const checkVsStatus = () => {
-        if (dmg <= vw) {
+    const checkPayment = () => {
+        if ((dmg <= vw) && !(vs * vw * dmg === 0)) {
             if (vs <= vw) {
                 setPayment((vs / vw) * dmg);
             } else if ((vs > vw) && dmg) {
@@ -21,6 +21,10 @@ const Hausrat = () => {
         } else {
             setPayment(0);
         }
+    }
+
+    const checkVsStatus = () => {
+        setVstype(vs === vw ? "Optimal" : (vs > vw ? "Überversichert" : "Unterversichert"));
     }
 
     const checkInputValidity = () => {
@@ -32,8 +36,9 @@ const Hausrat = () => {
     }
 
     useEffect(() => {
-        checkVsStatus();
+        checkPayment();
         checkInputValidity();
+        checkVsStatus();
     }, [vw, vs, dmg])
 
     return (

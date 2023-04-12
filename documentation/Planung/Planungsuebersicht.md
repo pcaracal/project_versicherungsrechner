@@ -25,12 +25,14 @@
 	- Versicherungstypen
 
 ### In Arbeit
-- Hausratsversicherung Site
-	- Schadensrechner
 
 ---
 
 ## Abgeschlossene Arbeiten
+
+12.04.2023
+- Hausratsversicherung Site
+	- Schadensrechner
 
 31.03.2023
 - Website main page realisieren gemäss Skizze von Figma
