@@ -73,6 +73,11 @@ const Hausrat = () => {
                             <strong>Versicherungsstatus: {vstypes[vsN][0]}</strong><br />
                             <p>{vstypes[vsN][1]}</p>
                         </div>
+                        <div hidden={!dmgInvalid}>
+                            <strong>
+                                Ihr Schaden kann nicht höher als ihr Hausratswert sein.
+                            </strong>
+                        </div>
                     </footer>
 
                 </article>
