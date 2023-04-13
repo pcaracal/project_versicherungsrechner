@@ -8,30 +8,31 @@ const Home = () => {
             <main className="container">
                 <header><h1>Home</h1></header>
 
+                <div className='grid'>
 
-                <aside onClick={() => navigate("auto")}>
-                    <article>
-                        <header>
-                            <strong>
-                                Auto
-                            </strong>
-                        </header>
-                        Ein Bonus-Malus-Rechner für ihre Auto Haftpflichtversicherung
-                    </article>
-                </aside>
+                    <aside onClick={() => navigate("auto")}>
+                        <article>
+                            <header>
+                                <strong>
+                                    Auto
+                                </strong>
+                            </header>
+                            Ein Bonus-Malus-Rechner für ihre Auto Haftpflichtversicherung
+                        </article>
+                    </aside>
 
 
-                <aside onClick={() => navigate("hausrat")}>
-                    <article>
-                        <header>
-                            <strong>
-                                Hausrat
-                            </strong>
-                        </header>
-                        Ein Schadensrechner für Hausratsversicherungen
-                    </article>
-                </aside>
-
+                    <aside onClick={() => navigate("hausrat")}>
+                        <article>
+                            <header>
+                                <strong>
+                                    Hausrat
+                                </strong>
+                            </header>
+                            Ein Schadensrechner für Hausratsversicherungen
+                        </article>
+                    </aside>
+                </div>
             </main>
         </div>
     );
