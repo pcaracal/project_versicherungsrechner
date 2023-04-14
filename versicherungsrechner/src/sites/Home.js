@@ -1,4 +1,4 @@
-import { useNavigate } from 'react-router-dom';
+import { Link, NavLink, useNavigate } from 'react-router-dom';
 
 const Home = () => {
     const navigate = useNavigate();
@@ -11,7 +11,7 @@ const Home = () => {
                 <div className='grid'>
 
                     <aside onClick={() => navigate("auto")}>
-                        <article>
+                        <article className="pointer">
                             <header>
                                 <strong>
                                     Auto
@@ -21,9 +21,8 @@ const Home = () => {
                         </article>
                     </aside>
 
-
                     <aside onClick={() => navigate("hausrat")}>
-                        <article>
+                        <article className="pointer">
                             <header>
                                 <strong>
                                     Hausrat
