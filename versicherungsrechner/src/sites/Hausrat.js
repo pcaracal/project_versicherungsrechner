@@ -42,7 +42,7 @@ const Hausrat = () => {
     }
 
     const checkVsStatus = () => {
-        setVsN((vs * vw * dmg === 0) ? 3 : (vs === vw ? 0 : (vs > vw ? 1 : 2)));
+        setVsN((vs * vw === 0) ? 3 : (vs === vw ? 0 : (vs > vw ? 1 : 2)));
     }
 
     const checkInputValidity = () => {

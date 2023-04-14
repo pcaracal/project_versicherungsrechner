@@ -38,7 +38,7 @@ const Auto = () => {
                                 <strong>Bonus-Malus-System Rechner</strong>
                             </header>
                             <body>
-                                fishcat
+                                Bonus Malus Rechner
                             </body>
                         </article>
                     </aside>

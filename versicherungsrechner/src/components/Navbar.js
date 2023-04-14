@@ -10,10 +10,9 @@ const Navbar = () => {
                 <h2 className="nomargin"><NavLink to="/">Versicherungsrechner</NavLink></h2>
                 <ul>
                     <li><NavLink to="/">Home</NavLink></li>
-                    <li><NavLink to="/auto">Auto</NavLink></li>
                     <li><NavLink to="/hausrat">Hausrat</NavLink></li>
+                    <li><NavLink to="/auto">Auto</NavLink></li>
                     <li><NavLink to="/about">About</NavLink></li>
-
                 </ul>
             </nav>
         </div>
