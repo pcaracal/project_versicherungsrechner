@@ -13,11 +13,15 @@ const Hausrat = () => {
         ],
         [
             "Überversichert",
-            "Ihre Versicherungssumme ist höher als der Hausratswert. Sie werden immer eine vollständige Schadensauszahlung erhalten, jedoch zahlen Sie zu viel für ihre Versicherung."
+            "Ihre Versicherungssumme ist höher als der Hausratswert. Sie werden immer eine vollständige Schadensauszahlung erhalten, jedoch zahlen Sie zu viel für Ihre Versicherung."
         ],
         [
             "Unterversichert",
             "Ihre Versicherungssumme ist tiefer als der Hausratswert. Sie zahlen eine kleinere Prämie, aber werden immer Schadensauszahlung kleiner als der Schaden erhalten."
+        ],
+        [
+            "Unbekannt",
+            "Bitte geben Sie Informationen zu Ihrer Situation an."
         ]
     ]
     const [vsN, setVsN] = useState(0);
@@ -38,7 +42,7 @@ const Hausrat = () => {
     }
 
     const checkVsStatus = () => {
-        setVsN(vs === vw ? 0 : (vs > vw ? 1 : 2));
+        setVsN((vs * vw * dmg === 0) ? 3 : (vs === vw ? 0 : (vs > vw ? 1 : 2)));
     }
 
     const checkInputValidity = () => {
