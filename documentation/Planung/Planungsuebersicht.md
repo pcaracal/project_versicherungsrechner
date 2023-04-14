@@ -21,7 +21,6 @@
 
 ### Offen
 - Autoversicherung Rechner Site
-	- B-M-S Rechner
 	- Versicherungstypen
 
 ### In Arbeit
@@ -31,6 +30,11 @@
 ---
 
 ## Abgeschlossene Arbeiten
+
+13.04.2023
+- Autoversicherung Rechner Site
+	- Site erstellt
+	- Tabelle für BMS Daten erstellt
 
 12.04.2023
 - Hausratsversicherung Site
