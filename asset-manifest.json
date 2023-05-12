@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/project_versicherungsrechner/static/css/main.3612f17e.css",
+    "main.js": "/project_versicherungsrechner/static/js/main.bc4f2ea1.js",
+    "index.html": "/project_versicherungsrechner/index.html",
+    "main.3612f17e.css.map": "/project_versicherungsrechner/static/css/main.3612f17e.css.map",
+    "main.bc4f2ea1.js.map": "/project_versicherungsrechner/static/js/main.bc4f2ea1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3612f17e.css",
+    "static/js/main.bc4f2ea1.js"
+  ]
+}
