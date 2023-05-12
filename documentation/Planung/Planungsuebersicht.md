@@ -31,6 +31,11 @@
 
 ## Abgeschlossene Arbeiten
 
+12.05.2023
+- Deployment
+	- Dockerfile erstellt
+	- Github Pages deployment
+
 13.04.2023
 - Autoversicherung Rechner Site
 	- Site erstellt
@@ -45,12 +50,10 @@
 - Homepage erstellen
 - React router für multi-page
 
-
 24.03.2023
 - React App Erstellen
 - CSS Library importieren
 - Ordnerstruktur für React Components und Sites
-
 
 17.03.2023:
 - Dokumentation erstellen
